@@ -1,11 +1,32 @@
 aid: sqreen
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sqreen.png
 name: Sqreen
-description: 'Sqreen is a company surfaced as a portfolio company of greylock, point-nine, y-combinator
-  and added to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Sqreen was a Paris- and San Francisco-based application security company
+  offering Runtime Application Self-Protection (RASP), an in-app Web Application Firewall,
+  and account-takeover and attack protection delivered through language agents for
+  Node.js, Python, Ruby, PHP, Java and Go. Backed by Y Combinator, Greylock and Point
+  Nine, Sqreen was acquired by Datadog in 2021 and its technology was folded into Datadog
+  Application Security Management. The standalone sqreen.com product, dashboard and
+  developer APIs have since been decommissioned; the domain no longer resolves. This
+  profile is retained as a historical company lead and has no live, independent API
+  surface to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/sqreen/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: acquired-defunct
+x-acquired-by: datadog
+x-acquired-year: 2021
 x-backed-by:
 - greylock
 - point-nine
@@ -14,10 +35,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Cybersecurity
+- Application Security
+- RASP
+- Web Application Firewall
+- DevSecOps
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,3 +53,11 @@ maintainers:
 common:
 - type: Website
   url: https://www.sqreen.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: 'Domain sqreen.com is decommissioned (no DNS/nameservers on any host); company
+    acquired by Datadog 2021 and folded into Datadog Application Security. No live API
+    surface, docs or OpenAPI to search, derive or probe.'
