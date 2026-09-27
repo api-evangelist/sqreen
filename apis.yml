@@ -77,3 +77,12 @@ x-enrichment:
   note: 'Domain sqreen.com is decommissioned (no DNS/nameservers on any host); company
     acquired by Datadog 2021 and folded into Datadog Application Security. No live API
     surface, docs or OpenAPI to search, derive or probe.'
+x-lifecycle:
+  state: deprecated
+  reason: domain-does-not-resolve
+  observed: '2026-09-27'
+  detail: >-
+    The company's own domain returned no A or AAAA record when probed. This is an observation about the domain, not a request from the company.
+  indexed: true
+  successor: datadog
+  successor_in_catalog: true
